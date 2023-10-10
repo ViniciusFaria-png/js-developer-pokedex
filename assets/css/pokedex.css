@@ -135,7 +135,60 @@
     width: 100%;
     padding: 1rem;
 }
+@keyframes barra {
+    from{
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+}
 
+.barra{
+    background-color: rgb(193, 219, 176);
+    border-radius: 1rem;
+    overflow: hidden
+}
+
+.bar{
+    border-radius: inherit;
+    animation: pokeBar 1.5s;
+}
+
+.bar-hp{
+    background-color: green;
+}
+.bar-atk{
+    background-color: rgb(231 21 21);
+}
+.bar-def{
+    background-color: #d66b13;
+}
+.bar-spcatk{
+    background-color: rgb(173, 5, 5);
+}
+.bar-spcdef{
+    background-color: rgb(121, 41, 157);
+}
+.bar-speed{
+    background-color: rgb(73, 114, 235);
+}
+
+.statusPokemon li{
+    list-style: none;
+}
+
+@keyframes mostrarModal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/* merda */
 .pagination button {
     padding: .25rem .5rem;
     margin: .25rem 0;
