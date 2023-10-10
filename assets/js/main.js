@@ -1,3 +1,4 @@
+
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
@@ -19,7 +20,7 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
-            <div class="pokemonButton" id="buttonDetalhes"> Detalhes</div>
+            <div class="pokemonButton" id="buttonDetalhes"></div>
             <ul class="status">
             </ul>
             <ul class="statusPrincipal">
@@ -30,13 +31,20 @@ function convertPokemonToLi(pokemon) {
             </ul>
 
             <ul class="statusPokemon">
-                <li class="statusLi">HP: ${pokemon.hp}</li>  <li class="barra"><div class="bar-hp bar" style="width: ${pokemon.hp}%;">&nbsp;</div></li>
-                <li class="statusLi">Attack: ${pokemon.atk}</li> <li class="barra"><div class="bar-atk bar" style="width: ${pokemon.atk}%">&nbsp;</div></li>
-                <li class="statusLi">Defense: ${pokemon.def}</li> <li class="barra"><div class="bar-def bar" style="width: ${pokemon.def}%">&nbsp;</div></li>
-                <li class="statusLi">Sp. Atk: ${pokemon.spcatk}</li> <li class="barra"><div class="bar-spcatk bar" style="width: ${pokemon.spcatk}%">&nbsp;</div></li>
-                <li class="statusLi">Sp. Def: ${pokemon.spcdef}</li> <li class="barra"><div class="bar-spcdef bar" style="width: ${pokemon.spcdef}%">&nbsp;</div></li>
-                <li class="statusLi">Speed: ${pokemon.speed}</li> <li class="barra"><div class="bar-speed bar" style="width: ${pokemon.speed}%">&nbsp;</div></li>
+                <li class="statusLi">HP: ${pokemon.hp}</li>
+                <li class="barra"><div class="bar-hp bar" style="width: ${pokemon.hp}%;">&nbsp;</div></li>
+                <li class="statusLi">Attack: ${pokemon.atk}</li>
+                <li class="barra"><div class="bar-atk bar" style="width: ${pokemon.atk}%;">&nbsp;</div></li>
+                <li class="statusLi">Defense: ${pokemon.def}</li>
+                <li class="barra"><div class="bar-def bar" style="width: ${pokemon.def}%;">&nbsp;</div></li>
+                <li class="statusLi">Sp. Atk: ${pokemon.spcatk}</li>
+                <li class="barra"><div class="bar-spcatk bar" style="width: ${pokemon.spcatk}%;">&nbsp;</div></li>
+                <li class="statusLi">Sp. Def: ${pokemon.spcdef}</li>
+                <li class="barra"><div class="bar-spcdef bar" style="width: ${pokemon.spcdef}%;">&nbsp;</div></li>
+                <li class="statusLi">Speed: ${pokemon.speed}</li>
+                <li class="barra"><div class="bar-speed bar" style="width: ${pokemon.speed}%;">&nbsp;</div></li>
             </ul>
+
         </li>
     `
 }
